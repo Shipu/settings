@@ -1,4 +1,4 @@
-# Kodeeo-Setting
+# Setting
 Persistent settings in Laravel
 
 ### Features
@@ -7,19 +7,19 @@ Persistent settings in Laravel
 
 ## Installation
 
-Kodeeo-Setting is a Laravel package so you can install it via Composer. Run this command in your terminal from your project directory:
+Setting is a Laravel package so you can install it via Composer. Run this command in your terminal from your project directory:
 
 ```sh
-composer require kodeeo/settings
+composer require shipu/settings
 ```
 Now run this command in your terminal to publish this package resources:
 
 ```
-php artisan vendor:publish --provider="Kodeeo\Settings\Providers\SettingsServiceProvider"
+php artisan vendor:publish --provider="Shipu\Settings\Providers\SettingsServiceProvider"
 ```
 If you run `vendor:publish` then you have add below code in your settings model 
 ```php
-protected $table = 'kodeeo_settings'; // you can change your database table name.
+protected $table = 'site_settings'; // you can change your database table name.
 public $timestamps = false;
 ``` 
 
@@ -27,11 +27,11 @@ public $timestamps = false;
 Use `GeTraits` traits in your model.
 
 ## API List
-- [all](https://github.com/kodeeo/settings#all)
-- [set](https://github.com/kodeeo/settings#set)
-- [get](https://github.com/kodeeo/settings#get)
-- [has](https://github.com/kodeeo/settings#has)
-- [forget](https://github.com/kodeeo/settings#current)
+- [all](https://github.com/shipu/settings#all)
+- [set](https://github.com/shipu/settings#set)
+- [get](https://github.com/shipu/settings#get)
+- [has](https://github.com/shipu/settings#has)
+- [forget](https://github.com/shipu/settings#current)
 
 ### all
 
