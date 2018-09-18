@@ -30,11 +30,11 @@ class SettingsServiceProvider extends ServiceProvider
      */
     public function publishConfig()
     {
-        $configPath = realpath(__DIR__.'/../../config/kodeeo-settings.php');
+        $configPath = realpath(__DIR__.'/../../config/settings.php');
         $this->publishes([
-            $configPath => config_path('settings.php'),
+            $configPath => config_path('site-settings.php'),
         ]);
-        $this->mergeConfigFrom($configPath, 'kodeeo-settings');
+        $this->mergeConfigFrom($configPath, 'site-settings');
     }
 
     /**
