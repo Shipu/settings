@@ -1,4 +1,4 @@
-# Setting
+# Settings
 Persistent settings in Laravel
 
 ### Features
