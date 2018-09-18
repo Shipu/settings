@@ -1,0 +1,37 @@
+{
+    "name": "shipu/settings",
+    "description": "Settings is persistent settings in laravel",
+    "type": "package",
+    "keywords": ["settings", "laravel", "lumen"],
+    "homepage": "http://shipuahamed.com",
+    "require-dev": {
+        "graham-campbell/testbench": "^3.3",
+        "phpunit/phpunit": "^5.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shipu Ahamed",
+            "email": "shipuahamed@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shipiu\\Settings\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shipu\\Settings\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shipu\\Settings\\Providers\\SettingsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
