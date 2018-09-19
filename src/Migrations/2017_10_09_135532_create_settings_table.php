@@ -13,7 +13,7 @@ class CreateSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('kodeeo_settings', function (Blueprint $table) {
+        Schema::create('site_settings', function (Blueprint $table) {
             $table->string('key')->index();
             $table->text('value');
         });
@@ -26,6 +26,6 @@ class CreateSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kodeeo_settings');
+        Schema::dropIfExists('site_settings');
     }
 }
