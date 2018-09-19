@@ -5,10 +5,6 @@ namespace Shipu\Settings\Providers;
 
 use App;
 use Illuminate\Support\ServiceProvider;
-use Kodeeo\Settings\Contracts\SettingsContract;
-use Kodeeo\Settings\Models\SettingsEloquent;
-use Kodeeo\Settings\Services\SettingsService;
-use Kodeeo\Settings\Settings;
 
 class SettingsServiceProvider extends ServiceProvider
 {
