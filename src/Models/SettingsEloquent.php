@@ -3,7 +3,7 @@
 namespace Shipu\Settings\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Kodeeo\Settings\Traits\GetSettings;
+use Shipu\Settings\Traits\GetSettings;
 
 class SettingsEloquent extends Model
 {
