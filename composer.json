@@ -17,7 +17,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Shipiu\\Settings\\": "src/"
+            "Shipu\\Settings\\": "src/"
         }
     },
     "autoload-dev": {
