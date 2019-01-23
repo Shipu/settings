@@ -13,9 +13,9 @@ class CreateSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('site_settings', function (Blueprint $table) {
-            $table->string('key')->index();
-            $table->text('value');
+        Schema::create(config('site-settings.table'), function (Blueprint $table) {
+            $table->string(config('site-settings.keyColumn'))->index();
+            $table->text(config('site-settings.valueColumn'));
         });
     }
 
@@ -26,6 +26,6 @@ class CreateSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('site_settings');
+        Schema::dropIfExists(config('site-settings.table'));
     }
 }
