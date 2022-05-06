@@ -27,18 +27,18 @@ public $timestamps = false;
 Use `GetSettings` traits in your model.
 
 ## API List
-- [all](https://github.com/shipu/settings#all)
+- [getAll](https://github.com/shipu/settings#getAll)
 - [set](https://github.com/shipu/settings#set)
 - [get](https://github.com/shipu/settings#get)
 - [has](https://github.com/shipu/settings#has)
 - [forget](https://github.com/shipu/settings#current)
 
-### all
+### getAll
 
 For getting all settings value paired by key you can use `all` method.
 
 ```php
-YourSettingModel::all(); // return collection
+YourSettingModel::getAll(); // return collection
 ```
 
 ### set
