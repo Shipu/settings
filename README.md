@@ -24,7 +24,7 @@ public $timestamps = false;
 ``` 
 
 ## Use Traits
-Use `GeTraits` traits in your model.
+Use `GetSettings` traits in your model.
 
 ## API List
 - [all](https://github.com/shipu/settings#all)
